@@ -102,7 +102,7 @@ Write out the command that you used and what happened.
 
 
 ==========
-15. MAKE SURE YOU'RE IN THE mtec1002-lab-03 directory!  
+15. MAKE SURE YOU'RE IN THE mtec100-lab-03 directory!  
 
 Force the removal of the directory and files using the -rf flag
 
@@ -112,7 +112,7 @@ $ rm -rf my_files
 
 
 ==========
-16. There's a txt file version of a book located in the mtec1002-lab-03 folder.  It is in the following directory if you're in the lab folder:
+16. There's a txt file version of a book located in the mtec1003-lab-03 folder.  It is in the following directory if you're in the lab folder:
 
 books/other/pg1232.txt
 
