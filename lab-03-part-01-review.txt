@@ -15,7 +15,7 @@ This lab will review downloading and uncompressing files, and it will get us set
 
 Write the command that you used to do this below:
 ----------
-
+$ cd or cd ~
 
 
 ==========
@@ -23,7 +23,7 @@ Write the command that you used to do this below:
 
 Write the command that you used to do this - as well as its output - below :
 ----------
-
+/c/Users/geddi
 
 
 ==========
@@ -31,13 +31,15 @@ Write the command that you used to do this - as well as its output - below :
 
 Write the command(s) that you used to determine this - as well as its output - below:
 ----------
-
+$ cd mtec 1003
+$ pwd mtec 1003
+$ ls -lat
 
 
 ==========
 4. If there are directories or files in your home directory that have the word mtec1003 in them, list them below (otherwise skip this step):
 ----------
-
+N/A
 
 
 ==========
@@ -51,7 +53,7 @@ $ rm -rf mtec1003-lab-03
 
 (skip if these directories don't exist)
 ----------
-
+N/A
 
 
 ==========
@@ -65,7 +67,7 @@ This command should have a *flag* to specify the output file.  MAKE SURE TO NAME
 
 Write the command(s) that you used to download this file - as well as its output - below:
 ----------
-
+$ curl -o mtec-1003-lab-03.tar.gz https://citytech.s3.amazonaws.com/mtec-1003-lab-03,zip
 
 
 ==========
@@ -73,8 +75,9 @@ Write the command(s) that you used to download this file - as well as its output
 
 Write the command(s) that you used to do this - as well as its output - below:
 ----------
-
-
+tar -xvf mtec-1003-lab-03.tar.gz
+tar: Child returned status 1
+tar: Error is not recoverable: exiting now
 
 ==========
 8.  You should now have a directory called mtec-1003-lab-03 in your home directory.  Verify that this directory exists.
@@ -96,7 +99,46 @@ Write the command(s) that you used to do this - as well as its output - below:
 
 Write the command(s) that you used to determine this - as well as its output - below:
 ----------
-
+'3D Objects'/
+ AppData/
+'Application Data'@
+ Contacts/
+ Cookies@
+'Creative Cloud Files'/
+ Desktop/
+ Documents/
+ Downloads/
+ Favorites/
+ Links/
+'Local Settings'@
+ Music/
+'My Documents'@
+ NTUSER.DAT
+ NTUSER.DAT{53b39e87-18c4-11ea-a811-000d3aa4692b}.TxR.0.regtrans-ms
+ NTUSER.DAT{53b39e87-18c4-11ea-a811-000d3aa4692b}.TxR.1.regtrans-ms
+ NTUSER.DAT{53b39e87-18c4-11ea-a811-000d3aa4692b}.TxR.2.regtrans-ms
+ NTUSER.DAT{53b39e87-18c4-11ea-a811-000d3aa4692b}.TxR.blf
+ NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TM.blf
+ NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000002.regtrans-ms
+ NetHood@
+ OneDrive/
+ Pictures
+ PrintHood@
+ Recent@
+'Saved Games'/
+ Searches/
+ SendTo@
+'Start Menu'@
+ Templates@
+ Videos/
+ Zomboid/
+ ansel/
+ jmg
+ mtec-1003-lab-03.tar.gz
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ ntuser.ini
 
 
 ==========
@@ -104,14 +146,24 @@ Write the command(s) that you used to determine this - as well as its output - b
 
 Write the command(s) (including going home) that you used to do this below:
 ----------
-
-
+$ pwd
+'Batman™ Arkham Knight.url'       'MTEC1001 - ADOBE WORK'/  'Where are my files.lnk'*
+'Call of Duty Black Ops III.url'   Phasmophobia.url          Zoom.lnk*
+ Cuphead.url                       Spotify.lnk*              desktop.ini
+'Dead by Daylight.url'             Terraria.url              mtec-1003-lab-03.tar.gz
+ Discord.lnk*                      VALORANT.lnk*             parsec-windows.exe*
 
 ==========
 11.  Write the files that are in the science fiction directory below.
 
 Write the command(s) that you used to do this - as well as its output - below:
 ----------
+$ cd ../../
+ 5f5bd63313ad63869533cdc2_fillable-w9-form.pdf  'Personal Vault.lnk'*
+ Desktop/                                        Pictures/
+ Document.docx                                   desktop.ini
+ Documents/                                      mtec1003-lab-02
+ GonzalezEdwardSandelMini.docx
 
 
 
@@ -120,12 +172,57 @@ Write the command(s) that you used to do this - as well as its output - below:
 
 Write the command(s) that you used to do this below:
 ----------
-
+$ cd /
+$ pwd
+$ ls
+LICENSE.txt        bin/  dev/  git-bash.exe*  mingw64/  tmp/          unins000.exe*  usr/
+ReleaseNotes.html  cmd/  etc/  git-cmd.exe*   proc/     unins000.dat  unins000.msg
 ==========
 13. Immediately change back to the mtec-1003-lab-03 folder with a single command using a *relative* path.
 
 Write the command(s) that you used to do this below:
 ----------
+$ cd ~
+'3D Objects'/
+ AppData/
+'Application Data'@
+ Contacts/
+ Cookies@
+'Creative Cloud Files'/
+ Desktop/
+ Documents/
+ Downloads/
+ Favorites/
+ Links/
+'Local Settings'@
+ Music/
+'My Documents'@
+ NTUSER.DAT
+ NTUSER.DAT{53b39e87-18c4-11ea-a811-000d3aa4692b}.TxR.0.regtrans-ms
+ NTUSER.DAT{53b39e87-18c4-11ea-a811-000d3aa4692b}.TxR.1.regtrans-ms
+ NTUSER.DAT{53b39e87-18c4-11ea-a811-000d3aa4692b}.TxR.2.regtrans-ms
+ NTUSER.DAT{53b39e87-18c4-11ea-a811-000d3aa4692b}.TxR.blf
+ NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TM.blf
+ NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000002.regtrans-ms
+ NetHood@
+ OneDrive/
+ Pictures
+ PrintHood@
+ Recent@
+'Saved Games'/
+ Searches/
+ SendTo@
+'Start Menu'@
+ Templates@
+ Videos/
+ Zomboid/
+ ansel/
+ jmg
+ mtec-1003-lab-03.tar.gz
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ ntuser.ini
 
 
 
@@ -134,9 +231,12 @@ Write the command(s) that you used to do this below:
 
 Write the command(s) that you used to do this below:
 ----------
+$ date mtec-1003-lab-03.tar.gz
+date: invalid date ‘mtec-1003-lab-03.tar.gz’
 
 ==========
 15. Create a compressed archive of the logs folder - that is... take the contents of logs and create a single archive (.tar), and compress (.gz) (tar, gzip)
 
 Write the command(s) that you used to do this below:
 ----------
+$ gzip mtec-1003-lab-03.tar.gz
