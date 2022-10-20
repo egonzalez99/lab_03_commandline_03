@@ -36,6 +36,14 @@ $ touch foo.txt
 $ ls
 Copy and paste the output below.
 ----------
+'Batman™ Arkham Knight.url'        Terraria.url
+'Call of Duty Black Ops III.url'   VALORANT.lnk*
+ Cuphead.url                      'Where are my files.lnk'*
+'Dead by Daylight.url'             Zoom.lnk*
+ Discord.lnk*                      desktop.ini
+'MTEC1001 - ADOBE WORK'/           foo.txt
+ Phasmophobia.url                  mtec-1003-lab-03.tar.gz
+ Spotify.lnk*                      parsec-windows.exe*
 
 
 
@@ -44,7 +52,15 @@ Copy and paste the output below.
 
 $ touch bar.txt
 ----------
-
+'Batman™ Arkham Knight.url'        VALORANT.lnk*
+'Call of Duty Black Ops III.url'  'Where are my files.lnk'*
+ Cuphead.url                       Zoom.lnk*
+'Dead by Daylight.url'             bar.txt
+ Discord.lnk*                      desktop.ini
+'MTEC1001 - ADOBE WORK'/           foo.txt
+ Phasmophobia.url                  mtec-1003-lab-03.tar.gz
+ Spotify.lnk*                      parsec-windows.exe*
+ Terraria.url
 
 
 ==========
@@ -52,6 +68,27 @@ $ touch bar.txt
 
 Copy and paste the output below.
 ----------
+$ ls -lat
+total 5900
+-rw-r--r-- 1 geddi 197609       0 Oct 20 17:26  bar.txt
+drwxr-xr-x 1 geddi 197609       0 Oct 20 17:26  ./
+-rw-r--r-- 1 geddi 197609       0 Oct 20 17:20  foo.txt
+-rw-r--r-- 1 geddi 197609     291 Oct 20 16:19  mtec-1003-lab-03.tar.gz
+-rwxr-xr-x 1 geddi 197609    1856 Oct 20 00:09  Spotify.lnk*
+-rw-r--r-- 1 geddi 197609     222 Oct 13 21:21 'Dead by Daylight.url'
+-rw-r--r-- 1 geddi 197609     222 Oct 13 19:08  Phasmophobia.url
+drwxr-xr-x 1 geddi 197609       0 Oct  8 18:56 'MTEC1001 - ADOBE WORK'/
+drwxr-xr-x 1 geddi 197609       0 Oct  6 00:10  ../
+-rw-r--r-- 1 geddi 197609     222 Oct  5 19:09 'Batman™ Arkham Knight.url'
+-rw-r--r-- 1 geddi 197609     222 Oct  3 20:34 'Call of Duty Black Ops III.url'
+-rw-r--r-- 1 geddi 197609     282 Oct  3 20:30  desktop.ini
+-rw-r--r-- 1 geddi 197609     222 Oct  2 20:57  Terraria.url
+-rwxr-xr-x 1 geddi 197609    2233 Sep 30 22:55  Discord.lnk*
+-rwxr-xr-x 1 geddi 197609    1543 Sep 28 19:07 'Where are my files.lnk'*
+-rwxr-xr-x 1 geddi 197609 5981528 Aug 30 23:48  parsec-windows.exe*
+-rwxr-xr-x 1 geddi 197609    1937 Aug 29 10:08  Zoom.lnk*
+-rwxr-xr-x 1 geddi 197609    1627 Aug 18 21:37  VALORANT.lnk*
+-rw-r--r-- 1 geddi 197609     222 Jul 14 18:49  Cuphead.url
 
 
 
@@ -61,6 +98,17 @@ Copy and paste the output below.
 
 Write the command that you used to copy the file.  Additionally, copy and paste the output of your file listing below.
 ----------
+$ cp bar.txt baz.txt
+$ ls
+'Batman™ Arkham Knight.url'        VALORANT.lnk*
+'Call of Duty Black Ops III.url'  'Where are my files.lnk'*
+ Cuphead.url                       Zoom.lnk*
+'Dead by Daylight.url'             bar.txt
+ Discord.lnk*                      baz.txt
+'MTEC1001 - ADOBE WORK'/           desktop.ini
+ Phasmophobia.url                  foo.txt
+ Spotify.lnk*                      mtec-1003-lab-03.tar.gz
+ Terraria.url                      parsec-windows.exe*
 
 
 
@@ -69,14 +117,16 @@ Write the command that you used to copy the file.  Additionally, copy and paste 
 
 Write the command that you used to remove the file.  Copy and paste the output of your file listing below.
 ----------
+$ rm baz.txt
+
 ==========
 11. Move the file called foo.txt to qux.txt and then list the files again.
 
 
 Write the command that you used to move the file.  Copy and paste the output of your file listing below.
 ----------
-
-
+$ mv foo.txt qux.txt
+$ mv qux.txt dir
 
 ==========
 12. Go up one directory so that you're in ~/mtec-1003-lab-03
@@ -90,7 +140,8 @@ Write the command that you used to move the file.  Copy and paste the output of 
 
 Write out the command that you used and what happened.
 ----------
-
+$ rmdir my_files
+rmdir: failed to remove 'my_files': No such file or directory
 
 
 ==========
@@ -98,7 +149,9 @@ Write out the command that you used and what happened.
 
 Write out the command that you used and what happened.
 ----------
+$ rm my_files
 
+File was removed from desktop.
 
 
 ==========
@@ -108,7 +161,15 @@ Force the removal of the directory and files using the -rf flag
 
 $ rm -rf my_files
 ----------
-
+'Batman™ Arkham Knight.url'        VALORANT.lnk*
+'Call of Duty Black Ops III.url'  'Where are my files.lnk'*
+ Cuphead.url                       Zoom.lnk*
+'Dead by Daylight.url'             bar.txt
+ Discord.lnk*                      desktop.ini
+'MTEC1001 - ADOBE WORK'/           dir
+ Phasmophobia.url                  mtec-1003-lab-03.tar.gz
+ Spotify.lnk*                      parsec-windows.exe*
+ Terraria.url
 
 
 ==========
@@ -120,7 +181,9 @@ Use the command called cat on the file to show its contents.
 
 Describe what happened below.
 ----------
-
+$ cat mtec-1003-lab-03.tar.gz
+<?xml version="1.0" encoding="UTF-8"?>
+<Error><Code>NoSuchKey</Code><Message>The specified key does not exist.</Message><Key>mtec-1003-lab-03,zip</Key><RequestId>SE02P46XF26PBDPB</RequestId><HostId>sZ58TDUwYLpUsNOlBHld0xVi3xphJY0qkSjSpQECa50zmUL5jKEzjoZheC7m8TWhR1m/qaZjuj0=</HostId></Error>
 
 
 ==========
@@ -132,6 +195,8 @@ Use the command, head, on the file to show the contents of the beginning of the 
 
 Write the command that you used below.  Write the last line of the output below (it should be the title).
 ----------
+$ head mtec-1003-lab-03.tar.gz
+<?xml version="1.0" encoding="UTF-8"?>
 
 
 
@@ -144,6 +209,7 @@ Use tail on the file to show the contents of the end of the file.
 
 Write the command that you used below.  Write the last line of the output below (it should be the title).
 ----------
+<HostId>sZ58TDUwYLpUsNOlBHld0xVi3xphJY0qkSjSpQECa50zmUL5jKEzjoZheC7m8TWhR1m/qaZjuj0=</HostId></Error>
 
 
 
@@ -156,23 +222,104 @@ Use less and more on the file to show the contents of the file.  Try pressing sp
 
 Write the command that you used below.  Describe what spacebar and q does after using either less or more.
 ----------
+$ less 
+<?xml version="1.0" encoding="UTF-8"?>
+<Error><Code>NoSuchKey</Code><Message>The specified key does not exist.</Message><Key>mtec-1003-lab-03,zip</Key><RequestId>SE02P46XF26PBDPB</RequestId><HostId>sZ58TDUwYLpUsNOlBHld0xVi3xphJY0qkSjSpQECa50zmUL5jKEzjoZheC7m8TWhR1m/qaZjuj0=</HostId></Error>
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+(END)
 
-
-
+$ more
+bash: more: command not found
 ==========
 20. Describe what situations you would use the following commands for viewing files: less, more, cat, tail, head
 
 (Some characteristics that may help your description might be the length of the file, whether or not you'd like to read the whole thing... or just the beginning or end, etc.)
 ----------
-
+less: This command shows each content within the file by displaying every value one by one.
+more: This command shows majority or all of contents within a file by displaying it inside of one screen.
+cat: THis command catenates/connects a series of files into one.
+tail: Typically displays the last line(s) of any given file.
+head: Typically displays the first line(s) of any given file.
 
 
 ==========
 21.  How many words are in pg1232.txt?  What command did you use to determine the word count?
 ----------
+$ wc -w mtec-1003-lab-03.tar.gz
+9 mtec-1003-lab-03.tar.gz
 
 
 
 ==========
 22.  How many lines are in pg1232.txt?  What command did you use to determine the line count?
 ----------
+$ wc -l mtec-1003-lab-03.tar.gz
+1 mtec-1003-lab-03.tar.gz
